@@ -1851,18 +1851,18 @@ main {
 }
 
 /*-----------------------------------*\
-  #BLOG
+  #achievements
 \*-----------------------------------*/
 
-.blog-posts { margin-bottom: var(--space-10); }
+.achievements-posts { margin-bottom: var(--space-10); }
 
-.blog-posts-list {
+.achievements-posts-list {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--space-20);
 }
 
-.blog-post-item > a {
+.achievements-post-item > a {
   position: relative;
   background: var(--border-gradient-onyx);
   height: 100%;
@@ -1871,7 +1871,7 @@ main {
   z-index: 1;
 }
 
-.blog-post-item > a::before {
+.achievements-post-item > a::before {
   content: "";
   position: absolute;
   inset: 1px;
@@ -1880,25 +1880,25 @@ main {
   z-index: -1;
 }
 
-.blog-banner-box {
+.achievements-banner-box {
   width: 100%;
   height: 200px;
   border-radius: var(--radius-lg);
   overflow: hidden;
 }
 
-.blog-banner-box img {
+.achievements-banner-box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: var(--transition-1);
 }
 
-.blog-post-item > a:hover .blog-banner-box img { transform: scale(1.1); }
+.achievements-post-item > a:hover .achievements-banner-box img { transform: scale(1.1); }
 
-.blog-content { padding: var(--space-16); }
+.achievements-content { padding: var(--space-16); }
 
-.blog-meta {
+.achievements-meta {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -1906,28 +1906,28 @@ main {
   margin-bottom: var(--space-10);
 }
 
-.blog-meta :is(.blog-category, time) {
+.achievements-meta :is(.achievements-category, time) {
   color: var(--light-gray-70);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
 }
 
-.blog-meta .dot {
+.achievements-meta .dot {
   background: var(--light-gray-70);
   width: var(--space-4);
   height: var(--space-4);
   border-radius: var(--space-4);
 }
 
-.blog-item-title {
+.achievements-item-title {
   margin-bottom: var(--space-10);
   line-height: var(--line-height-tight);
   transition: var(--transition-1);
 }
 
-.blog-post-item > a:hover .blog-item-title { color: var(--color-primary); }
+.achievements-post-item > a:hover .achievements-item-title { color: var(--color-primary); }
 
-.blog-text {
+.achievements-text {
   color: var(--color-text-secondary);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
@@ -2089,7 +2089,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
   
   .project-list,
-  .blog-posts-list {
+  .achievements-posts-list {
     gap: var(--space-16);
   }
   
@@ -2120,11 +2120,11 @@ textarea.form-input::-webkit-resizer { display: none; }
   .clients-item { min-width: calc(33.33% - 10px); }
 
   /**
-   * #PORTFOLIO, BLOG
+   * #PORTFOLIO, achievements
    */
 
   .project-img,
-  .blog-banner-box { height: auto; }
+  .achievements-banner-box { height: auto; }
 
 }
 
@@ -2381,14 +2381,14 @@ textarea.form-input::-webkit-resizer { display: none; }
   .skills-item:not(:last-child) { margin-bottom: var(--space-24); }
 
   /**
-   * #PORTFOLIO, BLOG
+   * #PORTFOLIO, achievements
    */
 
-  .project-img, .blog-banner-box { border-radius: var(--radius-lg); }
+  .project-img, .achievements-banner-box { border-radius: var(--radius-lg); }
 
-  .blog-posts-list { gap: var(--space-32); }
+  .achievements-posts-list { gap: var(--space-32); }
 
-  .blog-content { padding: var(--space-24); }
+  .achievements-content { padding: var(--space-24); }
 
   /**
    * #CONTACT
@@ -2486,9 +2486,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .filter-item button.active { color: var(--color-primary); }
 
-  /* portfolio and blog grid */
+  /* portfolio and achievements grid */
 
-  .project-list, .blog-posts-list { grid-template-columns: 1fr 1fr; }
+  .project-list, .achievements-posts-list { grid-template-columns: 1fr 1fr; }
 
   /**
    * CONTACT
@@ -2595,10 +2595,10 @@ textarea.form-input::-webkit-resizer { display: none; }
   .project-list { grid-template-columns: repeat(3, 1fr); }
 
   /**
-   * BLOG
+   * achievements
    */
 
-  .blog-banner-box { height: 230px; }
+  .achievements-banner-box { height: 230px; }
 
 }
 
@@ -2720,7 +2720,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .content-card,
   .testimonials-item,
   .clients-item,
-  .blog-post-item > a {
+  .achievements-post-item > a {
     background-color: rgba(0, 0, 0, 0.02); 
   }
 
@@ -2731,7 +2731,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .portfolio,
   .service-list,
   .contact,
-  .blog-posts-list {
+  .achievements-posts-list {
     background-color: rgba(0, 0, 0, 0.0090); 
   }
 }
