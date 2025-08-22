@@ -5,7 +5,7 @@
 ## Demo
 
 ![Desktop Demo](./assets/images/Desktop_Demo.png "Desktop Demo")
-![Mobile Demo](./website-demo-image/mobile.png "Mobile Demo")
+![Mobile Demo](./assets/images/Mobile_Demo.png "Mobile Demo")
 
 ## Features
 
