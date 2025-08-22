@@ -2715,17 +2715,16 @@ textarea.form-input::-webkit-resizer { display: none; }
    .timeline-text { max-width: 700px; }
 
      @media (prefers-color-scheme: light) {
-  /* subtle background for your panels */
   .sidebar,
   .card,
   .content-card,
   .testimonials-item,
   .clients-item,
   .blog-post-item > a {
-    background-color: rgba(0, 0, 0, 0.02); /* very light gray */
+    background-color: rgba(0, 0, 0, 0.02); 
   }
 
-  /* optionally, soften section wrappers too */
+
   main,
   .about,
   .resume,
@@ -2733,17 +2732,17 @@ textarea.form-input::-webkit-resizer { display: none; }
   .service-list,
   .contact,
   .blog-posts-list {
-    background-color: rgba(0, 0, 0, 0.0090); /* almost imperceptible warmth */
+    background-color: rgba(0, 0, 0, 0.0090); 
   }
 }
 
-/* Testimonials avatar fix */
+
 .testimonials-avatar-box {
   position: absolute;
-  top: -9px;       /* adjust as needed to sit on card edge */
-  left: 16px;       /* adjust horizontal offset */
-  width: 64px;      /* final avatar diameter */
-  height: 64px;     /* final avatar diameter */
+  top: -9px;      
+  left: 16px;       
+  width: 64px;     
+  height: 64px;     
   overflow: hidden;
   border-radius: 50%;
   box-shadow: var(--shadow-1);
@@ -2757,8 +2756,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   display: block;
 }
 
-/* If your cards use a different padding, you may need to tweak top/left */
-/* Example for 80px avatars: */
+
 .testimonials-avatar-box[data-avatar-size="80"] {
   width: 80px;
   height: 100px;
@@ -2768,12 +2766,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* Primary text stays light gray/white */
     --color-text: #ffffff;
-    /* Secondary text (body copy, descriptions) becomes a softer white */
     --color-text-secondary: rgba(255, 255, 255, 0.7);
   }
 }
-
 
 }
