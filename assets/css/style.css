@@ -829,6 +829,43 @@ main {
   line-height: 1.6;
 }
 
+.timeline-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timeline-item-title {
+  font-size: var(--fs-6);
+  font-weight: var(--fw-600);
+  color: var(--white-2);
+  margin-bottom: 0;
+}
+
+.timeline-meta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.3em;
+}
+
+.company-info {
+  font-size: 0.95rem;
+  color: var(--vegas-gold);
+  font-weight: var(--fw-400);
+}
+
+.timeline-dates {
+  font-size: 0.92rem;
+  color: var(--vegas-gold);
+  font-weight: var(--fw-400);
+  white-space: nowrap;
+  margin-left: 2rem; /* optional for spacing if needed */
+}
+
+
+
+
 
 /**
  * skills 
