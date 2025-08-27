@@ -1,8 +1,8 @@
 
 /* Light mode accents */
 :root {
-  --accent-primary: hsl(35, 100%, 68%);
-  --accent-secondary: hsl(35, 85%, 58%);
+  --accent-primary: hsl(35, 77%, 50%);
+  --accent-secondary: hsl(35, 77%, 50%);
 }
 
 /* Dark mode accents */
@@ -18,12 +18,12 @@
 
 /* Light Mode – use amber */
 :root {
-  --color-teal-300: hsl(35, 100%, 68%);
-  --color-teal-400: hsl(35, 100%, 68%);
-  --color-teal-500: hsl(35, 100%, 68%);
-  --color-teal-600: hsl(35, 85%, 58%);
-  --color-teal-700: hsl(35, 85%, 58%);
-  --color-teal-800: hsl(35, 85%, 58%);
+  --color-teal-300: hsl(35, 77%, 50%);
+  --color-teal-400: hsl(35, 77%, 50%);
+  --color-teal-500: hsl(35, 77%, 50%);
+  --color-teal-600: hsl(35, 77%, 50%);
+  --color-teal-700: hsl(35, 77%, 50%);
+  --color-teal-800: hsl(35, 77%, 50%);
 }
 
 /* Dark Mode – use red */
@@ -1578,12 +1578,18 @@ main {
   margin-left: 45px;
 }
 
+.uni-info {
+  font-size: 1rem;
+  color: var(--color-primary);
+  font-weight: var(--fw 400);
+}
+
 .timeline-item { position: relative; }
 
 .timeline-item:not(:last-child) { margin-bottom: var(--space-20); }
 
 .timeline-item-title {
-  font-size: var(--fs-6);
+  font-size: var(--fs-5);
   line-height: var(--line-height-tight);
   margin-bottom: var(--space-8);
 }
@@ -1643,13 +1649,13 @@ main {
 }
 
 .company-info {
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: var(--color-primary);
   font-weight: var(--fw-400);
 }
 
 .timeline-dates {
-  font-size: 0.92rem;
+  font-size: 0.97rem;
   color: var(--color-primary);
   font-weight: var(--fw-400);
   white-space: nowrap;
