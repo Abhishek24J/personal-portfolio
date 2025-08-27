@@ -263,7 +263,7 @@
   --color-background: var(--color-charcoal-700);
   --color-surface: var(--color-charcoal-800);
   --color-text: var(--color-gray-200);
-  --color-text-secondary: rgba(var(--color-gray-300-rgb), 0.7);
+  --color-text-secondary: rgba(var(--color-gray-200-rgb), 0.85);
   --color-primary: var(--color-teal-300);
   --color-primary-hover: var(--color-teal-400);
   --color-primary-active: var(--color-teal-800);
@@ -1321,7 +1321,7 @@ main {
 .service-item {
   position: relative;
   background: var(--border-gradient-onyx);
-  padding: var(--space-20);
+  padding: var(--space-);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-2);
   z-index: 1;
@@ -1584,6 +1584,12 @@ main {
   font-weight: var(--fw 400);
 }
 
+.timeline-item ul li::marker {
+  color: var(--color-primary);
+  content: "-  "; 
+  font-weight: bold; 
+}
+
 .timeline-item { position: relative; }
 
 .timeline-item:not(:last-child) { margin-bottom: var(--space-20); }
@@ -1626,7 +1632,7 @@ main {
   color: var(--color-text-secondary);
   font-weight: var(--fw-300);
   line-height: var(--line-height-normal);
-}
+  }
 
 .timeline-title-row {
   display: flex;
@@ -1646,6 +1652,12 @@ main {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 0.3em;
+}
+
+.course-list {
+  display: block; 
+  margin-top: 2px;
+  color: var(--color-text-secondary);
 }
 
 .company-info {
@@ -2582,7 +2594,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   /* service */
 
   .service-list {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: var(--space-20) var(--space-24);
   }
 
