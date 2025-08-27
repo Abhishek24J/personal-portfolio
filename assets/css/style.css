@@ -1,8 +1,8 @@
 
 /* Light mode accents */
 :root {
-  --accent-primary: hsl(35, 100%, 68%);
-  --accent-secondary: hsl(35, 85%, 58%);
+  --accent-primary: hsl(35, 77%, 50%);
+  --accent-secondary: hsl(35, 77%, 50%);
 }
 
 /* Dark mode accents */
@@ -18,12 +18,12 @@
 
 /* Light Mode – use amber */
 :root {
-  --color-teal-300: hsl(35, 100%, 68%);
-  --color-teal-400: hsl(35, 100%, 68%);
-  --color-teal-500: hsl(35, 100%, 68%);
-  --color-teal-600: hsl(35, 85%, 58%);
-  --color-teal-700: hsl(35, 85%, 58%);
-  --color-teal-800: hsl(35, 85%, 58%);
+  --color-teal-300: hsl(35, 77%, 50%);
+  --color-teal-400: hsl(35, 77%, 50%);
+  --color-teal-500: hsl(35, 77%, 50%);
+  --color-teal-600: hsl(35, 77%, 50%);
+  --color-teal-700: hsl(35, 77%, 50%);
+  --color-teal-800: hsl(35, 77%, 50%);
 }
 
 /* Dark Mode – use red */
@@ -203,7 +203,7 @@
     --color-background: var(--color-charcoal-700);
     --color-surface: var(--color-charcoal-800);
     --color-text: var(--color-gray-200);
-    --color-text-secondary: rgba(var(--color-gray-300-rgb), 0.7);
+    --color-text-secondary: rgba(var(--color-gray-300-rgb), 0.8);
     --color-primary: var(--color-teal-300);
     --color-primary-hover: var(--color-teal-400);
     --color-primary-active: var(--color-teal-800);
@@ -263,7 +263,7 @@
   --color-background: var(--color-charcoal-700);
   --color-surface: var(--color-charcoal-800);
   --color-text: var(--color-gray-200);
-  --color-text-secondary: rgba(var(--color-gray-300-rgb), 0.7);
+  --color-text-secondary: rgba(var(--color-gray-200-rgb), 0.85);
   --color-primary: var(--color-teal-300);
   --color-primary-hover: var(--color-teal-400);
   --color-primary-active: var(--color-teal-800);
@@ -1321,7 +1321,7 @@ main {
 .service-item {
   position: relative;
   background: var(--border-gradient-onyx);
-  padding: var(--space-20);
+  padding: var(--space-);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-2);
   z-index: 1;
@@ -1578,12 +1578,24 @@ main {
   margin-left: 45px;
 }
 
+.uni-info {
+  font-size: 1rem;
+  color: var(--color-primary);
+  font-weight: var(--fw 400);
+}
+
+.timeline-item ul li::marker {
+  color: var(--color-primary);
+  content: "-  "; 
+  font-weight: bold; 
+}
+
 .timeline-item { position: relative; }
 
 .timeline-item:not(:last-child) { margin-bottom: var(--space-20); }
 
 .timeline-item-title {
-  font-size: var(--fs-6);
+  font-size: var(--fs-5);
   line-height: var(--line-height-tight);
   margin-bottom: var(--space-8);
 }
@@ -1620,7 +1632,7 @@ main {
   color: var(--color-text-secondary);
   font-weight: var(--fw-300);
   line-height: var(--line-height-normal);
-}
+  }
 
 .timeline-title-row {
   display: flex;
@@ -1642,14 +1654,16 @@ main {
   margin-bottom: 0.3em;
 }
 
+
+
 .company-info {
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: var(--color-primary);
   font-weight: var(--fw-400);
 }
 
 .timeline-dates {
-  font-size: 0.92rem;
+  font-size: 0.97rem;
   color: var(--color-primary);
   font-weight: var(--fw-400);
   white-space: nowrap;
@@ -1826,7 +1840,7 @@ main {
 
 .project-img img {
   width: 100%;
-  height: 100%;
+  height: 200px;
   object-fit: cover;
   transition: var(--transition-1);
 }
@@ -2576,7 +2590,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   /* service */
 
   .service-list {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: var(--space-20) var(--space-24);
   }
 
