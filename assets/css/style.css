@@ -948,18 +948,20 @@ ul.timeline-text {
 
 ul.timeline-text li {
   position: relative;
-  padding-left: 18px;   /* Creates space for the hyphen */
-  margin-bottom: 8px;   /* Adds space between points */
+  padding-left: 25px; /* increase space for hyphen */
+  margin-bottom: 8px;
 }
-
 
 ul.timeline-text li::before {
   content: "-";
   position: absolute;
   left: 0;
-  top: 1px; /* Adjust if needed for perfect vertical alignment */
-  color: var(--color-primary); /* Your theme's yellow accent color */
+  top: 50%;
+  transform: translateY(-50%); /* centers dash vertically */
+  color: var(--color-primary);
   font-weight: var(--fw-600);
+  font-size: 1em; /* adjust size if needed */
+  line-height: normal;
 }
 
 img, ion-icon, a, button, time, span { display: block; }
@@ -1610,11 +1612,13 @@ main {
   font-weight: var(--fw 400);
 }
 
+/*
 .timeline-item ul li::marker {
   color: var(--color-primary);
   content: "-  "; 
   font-weight: bold; 
 }
+*/
 
 .timeline-item { position: relative; }
 
