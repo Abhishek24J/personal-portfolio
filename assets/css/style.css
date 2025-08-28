@@ -1655,7 +1655,18 @@ main {
   color: var(--color-text-secondary);
   font-weight: var(--fw-300);
   line-height: var(--line-height-normal);
+  padding-left: 15px; /* Creates space for the hyphen */
+  position: relative;   /* Required for positioning the hyphen */
   }
+
+.timeline-text::before {
+  content: "-";
+  color: var(--color-primary); /* This is your theme's yellow */
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 1px; /* Adjust for precise vertical alignment */
+}
 
 .timeline-title-row {
   display: flex;
