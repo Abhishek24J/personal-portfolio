@@ -1,11 +1,11 @@
-# vCard - Personal portfolio
+# Personal portfolio
 
-**vCard** is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
+This portfolio showcases my experience, projects, skills, and education. Built with a minimalist, user-focused design and fully responsive for 
+every device, it’s a one-stop solution for anyone interested in my background or work style.
 
 ## Demo
 
 ![Desktop Demo](./assets/images/Desktop_Demo.png "Desktop Demo")
-![Mobile Demo](./assets/images/Mobile_Demo.png "Mobile Demo")
 
 ## Features
 
