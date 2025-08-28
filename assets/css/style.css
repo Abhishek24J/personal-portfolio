@@ -934,30 +934,33 @@ select.form-control {
 
 a { text-decoration: none; }
 
-li { list-style: none; }
+/* li { list-style: none; } */
 
 
-.resume .timeline-text ul {
-  list-style-type: disc;
-  list-style-position: outside;
-  padding-left: 1.5em; 
+ul.timeline-text {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 8px;
+  color: var(--color-text-secondary);
+  font-weight: var(--fw-300);
+  line-height: var(--line-height-normal);
 }
 
-.resume .timeline-text ul li::marker {
-  color: var(--color-primary);
-  font-weight: bold;
-  font-size: 1em;
+ul.timeline-text li {
+  position: relative;
+  padding-left: 18px;   /* Creates space for the hyphen */
+  margin-bottom: 8px;   /* Adds space between points */
 }
 
 
-.resume .timeline-text ul li::before {
-  content: "– "; /* en dash plus space */
-  color: var(--color-primary);
-  font-weight: bold;
-  display: inline-block;
-  margin-right: 4px;
+ul.timeline-text li::before {
+  content: "-";
+  position: absolute;
+  left: 0;
+  top: 1px; /* Adjust if needed for perfect vertical alignment */
+  color: var(--color-primary); /* Your theme's yellow accent color */
+  font-weight: var(--fw-600);
 }
-
 
 img, ion-icon, a, button, time, span { display: block; }
 
@@ -1655,17 +1658,6 @@ main {
   color: var(--color-text-secondary);
   font-weight: var(--fw-300);
   line-height: var(--line-height-normal);
-  padding-left: 15px; /* Creates space for the hyphen */
-  position: relative;   /* Required for positioning the hyphen */
-  }
-
-.timeline-text::before {
-  content: "-";
-  color: var(--color-primary); /* This is your theme's yellow */
-  font-weight: bold;
-  position: absolute;
-  left: 0;
-  top: 1px; /* Adjust for precise vertical alignment */
 }
 
 .timeline-title-row {
