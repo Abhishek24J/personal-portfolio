@@ -1894,7 +1894,7 @@ main {
 .project-category { margin-left: var(--space-10); }
 
 .project-title {
-  color: var(--color-text);
+  color: var(--color-primary-active);
   font-size: var(--fs-5);
   font-weight: var(--fw-400);
   text-transform: capitalize;
@@ -1905,7 +1905,18 @@ main {
   color: var(--light-gray-70);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
+  margin-bottom: 0
 }
+
+.project-description {
+  color: var(--color-text-secondary); /* Or another color you prefer */
+  font-size: var(--fs-6); /* Adjust font size as needed */
+  font-weight: var(--fw-300);
+  line-height: var(--line-height-normal);
+  margin-top: 8px; /* Adds a little space below the category */
+  padding: 0 10px; /* Aligns with the title/category padding */
+}
+
 
 /*-----------------------------------*\
   #achievements
