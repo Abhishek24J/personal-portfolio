@@ -936,6 +936,29 @@ a { text-decoration: none; }
 
 li { list-style: none; }
 
+
+.resume .timeline-text ul {
+  list-style-type: disc;
+  list-style-position: outside;
+  padding-left: 1.5em; 
+}
+
+.resume .timeline-text ul li::marker {
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 1em;
+}
+
+
+.resume .timeline-text ul li::before {
+  content: "– "; /* en dash plus space */
+  color: var(--color-primary);
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 4px;
+}
+
+
 img, ion-icon, a, button, time, span { display: block; }
 
 button {
