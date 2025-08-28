@@ -5,7 +5,7 @@ every device, it’s a one-stop solution for anyone interested in my background 
 
 ## Demo
 
-![Desktop Demo](./assets/images/Desktop_Demo.png "Desktop Demo")
+![Desktop Demo](./assets/images/Desktop_Demo.png "Desktop_Demo")
 
 ## Features
 
