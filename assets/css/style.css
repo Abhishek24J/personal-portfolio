@@ -948,21 +948,22 @@ ul.timeline-text {
 
 ul.timeline-text li {
   position: relative;
-  padding-left: 25px; /* increase space for hyphen */
+  padding-left: 1px; /* increase space for hyphen */
   margin-bottom: 8px;
 }
 
-ul.timeline-text li::before {
+/* ul.timeline-text li::before {
   content: "-";
   position: absolute;
   left: 0;
   top: 50%;
-  transform: translateY(-50%); /* centers dash vertically */
+  transform: translateY(-50%); 
   color: var(--color-primary);
   font-weight: var(--fw-600);
-  font-size: 1em; /* adjust size if needed */
+  font-size: 1em; 
   line-height: normal;
 }
+*/
 
 img, ion-icon, a, button, time, span { display: block; }
 
@@ -1612,13 +1613,18 @@ main {
   font-weight: var(--fw 400);
 }
 
-/*
+.timeline-item ul {
+  list-style-position: outside;
+}
+
+
 .timeline-item ul li::marker {
   color: var(--color-primary);
   content: "-  "; 
   font-weight: bold; 
+  font-size: 1em;
 }
-*/
+
 
 .timeline-item { position: relative; }
 
