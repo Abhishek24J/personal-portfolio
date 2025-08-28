@@ -938,22 +938,22 @@ li { list-style: none; }
 
 
 ul.timeline-text {
-  list-style-type: none;
-  padding-left: 0;
+  list-style-type: none; /* removes default bullets/hyphens */
+  padding-left: 0;        /* remove left padding so no space for bullets */
   margin-top: 8px;
   color: var(--color-text-secondary);
   font-weight: var(--fw-300);
-  line-height: var(--line-height-normal);
+  /* remove position: relative; ONLY if it was for custom markers */
 }
 
 ul.timeline-text li {
-  position: relative;
-  padding-left: 1px; /* increase space for hyphen */
-  margin-bottom: 8px;
+  padding-left: 0;  /* no extra padding needed */
+  margin-bottom: 8px; /* keep line spacing */
+  position: static;  /* or remove relative positioning if set */
 }
 
-/* ul.timeline-text li::before {
-  content: "-";
+
+ul.timeline-text li::before {
   position: absolute;
   left: 0;
   top: 50%;
@@ -963,7 +963,7 @@ ul.timeline-text li {
   font-size: 1em; 
   line-height: normal;
 }
-*/
+
 
 img, ion-icon, a, button, time, span { display: block; }
 
@@ -1604,7 +1604,7 @@ main {
 
 .timeline-list {
   font-size: var(--fs-6);
-  margin-left: 45px;
+  margin-left: 40px;
 }
 
 .uni-info {
@@ -1614,15 +1614,22 @@ main {
 }
 
 .timeline-item ul {
-  list-style-position: outside;
+  list-style-position: outside; /* marker outside text block */
+  padding-left: 1px; /* Give space for marker */
+  margin: 0;
+}
+
+.timeline-item ul li {
+  margin-bottom: 8px;
 }
 
 
 .timeline-item ul li::marker {
   color: var(--color-primary);
-  content: "-  "; 
-  font-weight: bold; 
+  content: "- ";
+  font-weight: bold;
   font-size: 1em;
+  vertical-align: middle;
 }
 
 
@@ -1646,7 +1653,7 @@ main {
   content: "";
   position: absolute;
   top: -25px;
-  left: -30px;
+  left: -40px;
   width: 1px;
   height: calc(100% + 50px);
   background: var(--color-border);
@@ -1656,9 +1663,9 @@ main {
   content: "";
   position: absolute;
   top: 5px;
-  left: -33px;
-  height: var(--space-6);
-  width: var(--space-6);
+  left: -43px;
+  height: var(--space-8);
+  width: var(--space-8);
   background: var(--text-gradient-yellow);
   border-radius: 50%;
   box-shadow: 0 0 0 var(--space-4) var(--color-border);
